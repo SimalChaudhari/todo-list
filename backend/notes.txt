@@ -1,0 +1,96 @@
+Notes 
+
+get images of project locally 
+http://localhost:9000/images/:imagename
+
+localhost seeds command 
+sequelize  db:seed: all
+sequelize db:seed  --seed seedname
+////
+   adsfsaf  h
+heroku seed cammand 
+
+the new file
+heroku run bash
+npx  sequelize-cli db:seed --seed 20211004093459-addsuperadmin.js
+npx  sequelize-cli db:seed --seed 20220419141958-demo-user.js
+npx migratese quelize-cli db:seed:all
+npx sequelize-cli db:seed:all
+ npx sequelize-cli db:migrate
+
+https://www.dropbox.com/sh/ibwdpsf3xg6idm1/AAB-S2VwCN31D7X16T5fAU9Ha?dl=0&preview=PensivePennies-Project-Proposal_v2.docx
+
+
+new command write here
+
+// parent child benifit structure
+greant grant how :-  great grant parent also receive some amount 
+grant how :-  parent to grant parent 
+parent how :- fees get transfered to parent
+child how :- 20$
+ 
+ 
+
+ example 
+great grant parent 
+grant parent
+parent  
+child1 20$
+child2 20$
+
+
+about delte stratergy
+if we delete one how  there  donor are become orphan  so we need  to tell the donor to change there Organization 
+if  we delete or suspend any house of workship then there child house of workship get transfered to greate grant parent 
+
+
+
+
+thise is example of recursive common table expression
+
+WITH RECURSIVE cte (n) AS
+(
+  SELECT 1
+  UNION ALL
+  SELECT n + 1 FROM cte WHERE n < 5
+)
+SELECT * FROM cte;
+
+
+
+if house of workshipe suspended by the  superadmin
+
+if how suspended  thene don't stop donor do donate house of workshipe
+they will continue theier donation to house of workship
+
+if house of workship deleted by superadmin
+we notify the donors
+according to that donor will change their Organization
+
+
+// how invite other how to join 
+//how invite donor to join the Organization
+
+//donor invitation 
+
+
+
+// if one donor refer some other donor select referal how as default
+// donor signup page referral show some data signup page
+// notification of the hpadmin mail and dashboard
+// all hollyhouses page see donors of how
+
+
+// blcok how section
+house of work ship does not have authority  to block  or any other house of workship 
+
+house of workship have authority to make request of delete self request 
+and thise request should  be accepted by superadmin panel 
+and notification should be given to parent house of workship about deleted child house of workship
+
+mysql cleardb 
+Name:  holypenniesconnection
+Host: us-cdbr-east-04.cleardb.com
+Port: 3306
+Username:	b9c9e61e1f258d
+Password:	b8e08f16 (Reset)

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #FE5F1E;
+    --primary-hover: #b23301;
+    --secondary: #F8F8F8;
+    --pure: #fff;
+    --dark: #232323;
+    --gray: #ccc;
+    --smooth: all .3s ease-in-out;
+}
+
+section.login{
+    background: var(--secondary);
+    min-height: calc(100vh - 90px);
+}
+
+.btn-primary{
+    background: var(--primary);
+    color: var(--pure);
+}
+
+
+@media(max-width:1060px){
+    .container{
+        width: 90%;
+    }  
+   
+
+}
+@media(max-width:576px){
+    .status .status-box ul li span:before{
+        font-size: 36px;   
+    }
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }

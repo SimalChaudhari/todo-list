@@ -1,0 +1,9 @@
+export const SET_TOKEN = 'SET_TOKEN';
+export const LOG_OUT = 'LOG_OUT';
+export const LOGIN_ERRORS = 'LOGIN_ERRORS';
+export const CLEAR_LOGIN_ERRORS = 'CLEAR_LOGIN_ERRORS';
+
+export const SWITCH_NAV = 'SWITCH_NAV';
+export const SET_LOGIN_ERROR = "SET_LOGIN_ERROR"
+export const SET_MONTHLY_DONOR_HOW_COUNT_REPORT = "SET_MONTHLY_DONOR_HOW_COUNT_REPORT";
+

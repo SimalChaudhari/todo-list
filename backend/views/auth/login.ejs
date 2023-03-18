@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <% if(message){ %>
+      <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <%= message %>
+        </div>
+    <% } %>
+
+    <section class="login flex justify-center pt-24">  
+      <div class="w-full max-w-xs">
+        <% if(isotp == false){ %>
+          <form
+          action="/api/auth/login"
+          method="POST"
+          class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="username"
+              >
+                Email
+              </label>
+              <input
+                name="email"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="flex items-center justify-between">
+              <button
+                class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Get Otp
+              </button>
+            </div>
+          </form>
+        <% } else { %>
+          <form
+          action="/api/auth/verifyotp"
+          method="POST"
+          class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="username"
+              >
+                Enter Otp
+              </label>
+              <input
+                name="otp"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="number"
+                placeholder="Enter your Otp"
+              />
+            </div>
+            <div class="flex items-center justify-between">
+              <button
+                class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Verify otp
+              </button>
+            </div>
+          </form>
+        <% } %>
+        <p class="text-center text-gray-500 text-xs">
+          &copy;2021 iotrt. All rights reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/js/login.js"></script>
+</html>

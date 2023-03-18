@@ -1,0 +1,2 @@
+web:sequelize db:seed:all
+web:sequelize db:seed --seed 20211004093459-addsuperadmin.js

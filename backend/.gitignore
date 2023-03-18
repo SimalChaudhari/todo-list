@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.env
+.idea
+log
+ota-service/
+img
+demo.js
+
+public/images/

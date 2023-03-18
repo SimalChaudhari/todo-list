@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+    "baseUrl": "src",
+    "noUnusedLocals": true
+    },
+    "include": ["src", "public/service-worker.js"]
+}

@@ -1,0 +1,56 @@
+/* Importing fonts from Google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Reseting */
+
+.wrapper {
+  max-width: 450px;
+  padding: 5px 5px;
+  min-height: 300px;
+  border-top: 1px;
+  border-left: 1px;
+  border-radius: 15px;
+}
+
+.wrapper .form-group {
+  border-bottom: 1px solid;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper .form-group:hover {
+  border-bottom: 1px solid;
+}
+
+.wrapper .form-group .icons {
+  color: rgb(214, 137, 56);
+}
+
+.wrapper .form-group .form-control {
+  background: inherit;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.wrapper .form-group .fa-phone {
+  transform: rotate(90deg);
+}
+
+.wrapper .option {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper .option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.icons {
+  margin-top: 10px;
+}

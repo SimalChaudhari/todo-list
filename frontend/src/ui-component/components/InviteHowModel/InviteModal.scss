@@ -1,0 +1,29 @@
+.confirmation-modal-wrapper {
+    .modal-header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .simple-modal-title{
+        margin-bottom: 0;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+
+    .simple-modal-body{
+        position: relative;
+        flex: 1 1 auto;
+        padding: 1rem;
+    }
+
+    .simple-modal-footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.75rem;
+        border-top: 1px solid #dee2e6;
+    }
+}

@@ -1,0 +1,65 @@
+
+.wrapper {
+  max-width: 450px;
+  padding: 5px 5px;
+  min-height: 300px;
+  border-top: 1px;
+  border-left: 1px;
+  border-radius: 15px;
+}
+.wrapper .form-group {
+  border-bottom: 1px solid;
+  margin-bottom: 1.5rem;
+}
+.wrapper .form-group:hover {
+  border-bottom: 1px solid;
+}
+.wrapper .form-group .icon {
+  color: rgb(214, 137, 56);
+}
+.wrapper .form-group .form-control {
+  background: inherit;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.wrapper .form-group .fa-phone {
+  transform: rotate(90deg);
+}
+
+
+
+// @media (max-width: 320px) {
+//   .circle {
+//     line-height: 3rem;
+//   }
+//   .fellow {
+//     width: 90%;
+//   }
+//   .content-wrapper {
+//     margin: -30px;
+//   }
+//   .simple-modal-footer {
+//     margin: 10%;
+//   }
+// }
+
+// @media (max-width: 460px) {
+//   .wrapper {
+//     margin: 15px;
+//     padding: 20px;
+//   }
+//   .circle {
+//     line-height: 3rem;
+//   }
+
+//   .wrapper .connect::after {
+//     left: 38%;
+//   }
+// }
+
+// @media (max-width: 345px) {
+//   .wrapper .connect::after {
+//     left: 32%;
+//   }
+// }
