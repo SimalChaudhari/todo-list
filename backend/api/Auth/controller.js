@@ -50,7 +50,9 @@ const jwtauthorization = async (req, res, next) => {
 
 // login using email and password
 const login = async (req, res) => {
-  console.log("$$%%$%$")
+  
+  const pass = await bcrypt.hash(req.body.password, 10);
+  console.log(pass);
   try {
     const admin = await userTable.findOne({
       where: { email: req.body.email, role: ROLES.Admin },

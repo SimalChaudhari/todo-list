@@ -7,6 +7,9 @@
     -> install packages `npm install`
     -> npm start
 
+# Login Credential
+ email : admin@yopmail.com
+ password : Admin@1234
 # ------------------------------
 *Please do this task combined React Js and NodeJS?*
 React:

@@ -81,7 +81,12 @@ const Login = () => {
                   .email("Must be a valid email")
                   .max(255)
                   .required("Email is required"),
-                password: Yup.string().max(255).required("Password is required"),
+                password: Yup.string().max(255)
+                .required("Password is required")
+                .matches(
+                  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+                  "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+                ),
               })}
               onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
                 try {
